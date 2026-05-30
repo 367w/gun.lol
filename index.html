@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4c · gun.lol style</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <video id="background" autoplay muted loop playsinline>
+    <source src="./assets/background.mp4" type="video/mp4" />
+  </video>
+
+  <div class="cinematic-bars"></div>
+  <div class="space-field"></div>
+  <div class="hex-particles" id="hex-particles"></div>
+  <div class="hex-glow one"></div>
+  <div class="hex-glow two"></div>
+  <div class="hex-glow three"></div>
+  <div class="lens-flare"></div>
+  <img class="sword-deco" src="./assets/sword_flowers.png" alt="" />
+  <img class="sword-reflection" src="./assets/sword_flowers.png" alt="" />
+  <div class="noise"></div>
+  <div class="scanline"></div>
+
+  <div id="enter-screen">
+    <div class="enter-bg-pulse"></div>
+    <div class="meteor"></div>
+    <div class="enter-logo">☆</div>
+    <button class="enter-text" id="enter-button">
+      <span class="type">Verified Page</span>
+      <span class="bar"></span>
+      <span class="type delay">Press Here</span>
+    </button>
+  </div>
+
+  <button id="sound-toggle" aria-label="Son">🔇</button>
+
+  <main class="profile-card hidden-before-enter" id="profile-card">
+    <section class="top-row">
+      <div class="profile-logo star-logo" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="real-star">
+          <path d="M60 7 L73 45 L112 30 L82 61 L103 99 L60 82 L17 99 L38 61 L8 30 L47 45 Z" />
+        </svg>
+        <svg viewBox="0 0 120 120" class="real-star star-slice">
+          <path d="M60 7 L73 45 L112 30 L82 61 L103 99 L60 82 L17 99 L38 61 L8 30 L47 45 Z" />
+        </svg>
+      </div>
+
+      <div class="identity">
+        <div class="name-line">
+          <h1 class="glitch-name" data-text="4c">4c</h1>
+          <div id="badge-row" class="badge-row" aria-label="Badges"></div>
+        </div>
+        <p class="joined">Joined 8/6/2024</p>
+      </div>
+    </section>
+
+    <section class="discord-row">
+      <article class="discord-widget widget-hover">
+        <img class="discord-avatar-img" src="./assets/discord_profile.jpg" alt="Discord profile">
+        <div>
+          <strong>q354 <span>☠ Sy-x</span></strong>
+          <p>currently doing nothing</p>
+        </div>
+      </article>
+
+      <article class="server-widget widget-hover">
+        <div class="server-avatar">S</div>
+        <div>
+          <strong>Synapse <small>Discord</small></strong>
+          <p><i></i> <b>58</b> Online • <b>419</b> Members</p>
+          <button>Join</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="socials">
+      <span class="wing wing-left"></span>
+      <a href="#" aria-label="Discord">☁</a>
+      <a href="#" aria-label="GitHub">◉</a>
+      <span class="wing wing-right"></span>
+    </section>
+
+    <footer class="stats">
+      <span class="views">◉ <b id="view-count">0</b></span>
+      <span class="divider"></span>
+      <span>◆ Los Angeles</span>
+    </footer>
+  </main>
+
+  <section class="music-player hidden-before-enter">
+    <div class="cover">♫</div>
+    <span id="current-time">0:00</span>
+    <input id="progress" type="range" min="0" max="100" value="0" />
+    <span id="duration">1:41</span>
+    <button id="prev">◀</button>
+    <button id="play-pause">Ⅱ</button>
+    <button id="next">▶</button>
+  </section>
+
+  <audio id="music" src="./assets/background_music.mp3" loop preload="auto"></audio>
+
+  <script src="./index.js"></script>
+</body>
+</html>
